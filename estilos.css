@@ -1,0 +1,171 @@
+:root{
+    --primario:#9C27B0;
+    --primarioOscuro:#89119D;
+    --secundario:#FFCE00;
+    --secundarioOscuro:
+    --blanco:#FFF;
+    --negro:#000;
+    --funtePrincipal: 'Arial';
+    
+    
+    
+    }
+    html{
+        box-sizing: border-box;
+        font-size: 62.5%;
+    }
+    
+    /**/
+    body{
+    background-color: var(--primario);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    }
+    
+p{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--blanco);
+}
+
+    a{
+         text-decoration: none;
+    }
+    
+    img{
+        width: 100%;
+    }
+    
+    
+
+    h1, h2, h3{
+        text-align: center;
+        color: var(--secundario);
+        font-family: var(--funtePrincipal);
+    }
+    
+    h1{
+        font-size: 4rem;
+    }
+
+    h2{
+        font-size: 4rem;
+    }
+
+    h3{
+        font-size: 2.4rem;
+    }
+
+    .header{
+        display: flex;
+        justify-content: center;
+    }
+    .header_logo{
+    margin: 3 rem 0;
+    
+    }
+    
+    .navegacion{
+        background-color: var(--primarioOscuro);
+        padding: 1rem 0;
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    .navegacion_enlace{
+        font-family: var(--funtePrincipal);
+        color: var(--blanco);
+        font-size: 3 rem;
+    }
+    
+    .footer{
+        background-color: var(--primarioOscuro);
+    
+    }
+    .footer_texto{
+        font-family: var(--funtePrincipal);
+        text-align: center;
+        font-size: 2.2rem;
+    }
+
+    div, img{
+        display: block;
+        position: relative;
+        width: 300px
+    }
+
+    div p {
+        background-color: aquamarine(0, 0, 0, 0.8);
+        display: block;
+        position: absolute;
+        bottom: -16px;
+        left: 0;
+        padding: 5px;
+        width: 100%;
+    }
+
+   /** Productos **/
+.producto {
+    background-color: var(--primarioOscuro);
+    padding: 1rem;
+}
+
+.producto_nombre {
+    font-size: 2rem;
+    margin-top: 6rem;
+    color: white;
+    
+}
+.producto_precio {
+    font-size: 2.8rem;
+    color: var(--secundario);
+}
+.producto_nombre,
+.producto_precio {
+    font-family: var(--fuentePrincipal);
+    margin: 1rem 0;
+    text-align: center;
+    line-height: 1.2;
+    
+}
+
+
+   
+   img{
+    max-width: 100%;
+   }
+
+   .caja7{
+    margin-left: 6vw;
+    margin-top: 2vw;
+   }
+   .fila{
+    display: flex;
+   }
+   .filax{
+    display: flex;
+   }
+   .filay{
+    display: flex;
+   }
+
+   .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .caja7 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
